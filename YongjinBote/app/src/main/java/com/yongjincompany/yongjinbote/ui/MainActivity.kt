@@ -1,7 +1,8 @@
-package com.yongjincompany.yongjinbote
+package com.yongjincompany.yongjinbote.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yongjincompany.yongjinbote.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

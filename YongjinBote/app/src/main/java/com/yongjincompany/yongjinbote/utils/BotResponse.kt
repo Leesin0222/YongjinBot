@@ -55,7 +55,7 @@ object BotResponse {
                 }
             }
 
-            message.contains("time") && message.contains("?") -> {
+            message.contains("시간") && message.contains("?") -> {
                 Time.timeStamp()
             }
 

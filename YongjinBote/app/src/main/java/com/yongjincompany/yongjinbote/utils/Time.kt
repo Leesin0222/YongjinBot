@@ -8,7 +8,7 @@ object Time {
 
     fun timeStamp(): String {
         val timeStamp = Timestamp(System.currentTimeMillis())
-        val sdf = SimpleDateFormat("HH:mm")
+        val sdf = SimpleDateFormat("현재 시간은 HH:mm이야")
         val time = sdf.format(Date(timeStamp.time))
 
         return time.toString()

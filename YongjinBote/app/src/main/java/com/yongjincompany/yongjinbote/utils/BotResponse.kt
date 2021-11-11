@@ -40,7 +40,7 @@ object BotResponse {
                 var r = (0..1).random()
                 val result = if (r == 0) "앞면" else "뒷면"
 
-                "I flipped a coin and it landed on $result"
+                "${result}이 나왔네요!"
             }
 
             message.startsWith("계산") -> {

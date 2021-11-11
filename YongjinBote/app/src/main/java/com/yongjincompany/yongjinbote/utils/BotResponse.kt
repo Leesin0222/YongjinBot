@@ -7,7 +7,7 @@ object BotResponse {
 
     fun basicResponses(_message: String): String {
 
-        val random = (0..2).random()
+        val random = (0..5).random()
         val message = _message.toLowerCase()
 
         return when {
@@ -17,6 +17,9 @@ object BotResponse {
                     0 -> "안녕?"
                     1 -> "안녕하세유"
                     2 -> "헬로우 월드!!"
+                    3 -> "안녕 방가워"
+                    4 -> "안녕 못하겠는데.."
+                    5 -> "👋"
                     else -> "error"
                 }
             }
@@ -25,7 +28,10 @@ object BotResponse {
                 when(random) {
                     0 -> "너무 힘들다 오늘만 100명째..."
                     1 -> "기모찌~"
-                    2 -> "대답하기 싫어"
+                    2 -> "오늘 기분 좋았지 넌 어때?"
+                    3 -> "행복해"
+                    4 -> "배고파 많이~"
+                    5 -> "심심해.."
                     else -> "error"
                 }
             }
@@ -37,8 +43,8 @@ object BotResponse {
                 "I flipped a coin and it landed on $result"
             }
 
-            message.contains("solve") -> {
-                val equation: String? = message.substringAfter("solve")
+            message.contains("계산") -> {
+                val equation: String? = message.substringAfter("계산")
 
                 return try{
                     val answer = SolveMath.solveMath(equation ?: "0")

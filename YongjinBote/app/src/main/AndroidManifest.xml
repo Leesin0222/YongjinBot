@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YongjinBote">
         <activity
+            android:name=".ui.HelpActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.MainActivity"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

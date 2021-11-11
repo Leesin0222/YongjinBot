@@ -36,14 +36,14 @@ object BotResponse {
                 }
             }
 
-            message.contains("flip") && message.contains("coin") -> {
+            message.startsWith("던진다") && message.contains("동전") -> {
                 var r = (0..1).random()
-                val result = if (r == 0) "heads" else "tails"
+                val result = if (r == 0) "앞면" else "뒷면"
 
                 "I flipped a coin and it landed on $result"
             }
 
-            message.contains("계산") -> {
+            message.startsWith("계산") -> {
                 val equation: String? = message.substringAfter("계산")
 
                 return try{
@@ -59,11 +59,11 @@ object BotResponse {
                 Time.timeStamp()
             }
 
-            message.contains("open") && message.contains("google") -> {
+            message.startsWith("open") && message.contains("google") -> {
                 OPEN_GOOGLE
             }
 
-            message.contains("search") -> {
+            message.startsWith("search") -> {
                 OPEN_SEARCH
             }
 

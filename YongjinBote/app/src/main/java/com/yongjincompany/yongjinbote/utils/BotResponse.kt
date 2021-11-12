@@ -36,7 +36,19 @@ object BotResponse {
                 }
             }
 
-            message.startsWith("던진다") && message.contains("동전") -> {
+            message.contains("연애") -> {
+                when(random) {
+                    0 -> "사랑이란.. 뭐지?"
+                    1 -> "내가 한없이 좋아하는 사람은 자신을 좋아하는 것이 좋다."
+                    2 -> "연애 넌 평생 못할듯 ㅋㅋㅋ"
+                    3 -> "사랑은 헷갈리게 하지 않아"
+                    4 -> "혼자 마음고생 심하게 하는 것보다 일을 치르는게 낫다"
+                    5 -> "꽁냥꽁냥한 연애 You Want?"
+                    else -> "error"
+                }
+            }
+
+            message.contains("행운동전") -> {
                 var r = (0..1).random()
                 val result = if (r == 0) "앞면" else "뒷면"
 
@@ -55,15 +67,16 @@ object BotResponse {
                 }
             }
 
+
             message.contains("시간") && message.contains("?") -> {
                 Time.timeStamp()
             }
 
-            message.startsWith("open") && message.contains("google") -> {
+            message.startsWith("들어가줘") && message.contains("구글") -> {
                 OPEN_GOOGLE
             }
 
-            message.startsWith("search") -> {
+            message.startsWith("검색") -> {
                 OPEN_SEARCH
             }
 

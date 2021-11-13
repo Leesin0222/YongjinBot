@@ -25,6 +25,7 @@
             android:background="@drawable/round_button"
             android:backgroundTint="@android:color/white"
             android:hint="메시지를 입력해주세요"
+            android:textColor="@color/black"
             android:padding="10dp"
             android:singleLine="true" />
 
@@ -36,7 +37,7 @@
             android:layout_weight="1"
             android:background="@drawable/round_button"
             android:backgroundTint="#26A69A"
-            android:text="Send"
+            android:text="전송"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

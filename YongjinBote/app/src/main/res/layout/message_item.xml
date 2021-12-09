@@ -5,32 +5,39 @@
 
     <TextView
         android:id="@+id/tv_message"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxWidth="255dp"
         android:layout_alignParentEnd="true"
-        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/send_round_box"
         android:backgroundTint="#26A69A"
+        android:fontFamily="@font/nanumsquarer"
         android:padding="14dp"
         android:text="1p message"
-        android:fontFamily="@font/dunggeunmo"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
     <TextView
-        android:visibility="visible"
         android:id="@+id/tv_bot_message"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_margin="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/receive_round_box"
         android:backgroundTint="#FF7043"
+        android:fontFamily="@font/nanumsquarer"
         android:padding="14dp"
         android:text="2p message"
-        android:fontFamily="@font/dunggeunmo"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:visibility="visible" />
 
 
 </RelativeLayout>

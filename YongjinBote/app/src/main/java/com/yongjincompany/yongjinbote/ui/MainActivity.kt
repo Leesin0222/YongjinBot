@@ -18,7 +18,7 @@ import kotlinx.coroutines.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var adapter: MessagingAdapter
-    private val botList = listOf("김민성", "이용진", "철수", "유미")
+    private val botList = listOf("민성", "용진", "철수", "유미")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
